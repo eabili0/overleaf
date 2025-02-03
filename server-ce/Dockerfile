@@ -122,4 +122,4 @@ ENTRYPOINT ["/sbin/my_init"]
 ARG MONOREPO_REVISION
 RUN echo "monorepo-server-ce,$MONOREPO_REVISION" > /var/www/revisions.txt
 
-RUN tlmgr install xcolor titlesec textpos isodate substr fontspec xltxtra
+RUN tlmgr install xcolor titlesec textpos isodate substr fontspec xltxtra realscripts
