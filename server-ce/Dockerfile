@@ -121,3 +121,5 @@ ENTRYPOINT ["/sbin/my_init"]
 # This should be the last step to optimize docker image caching.
 ARG MONOREPO_REVISION
 RUN echo "monorepo-server-ce,$MONOREPO_REVISION" > /var/www/revisions.txt
+
+RUN tlmgr install xcolor titlesec textpos isodate substr fontspec xltxtra
